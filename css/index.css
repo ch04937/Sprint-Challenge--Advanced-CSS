@@ -341,3 +341,8 @@ body {
   background: green;
   font-size: 1.4;
 }
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
+}
