@@ -1,9 +1,8 @@
 // Home Content
 
 .home {
-  display: flex;
+  .diplayFlexColumn;
   justify-content: center;
-  flex-direction: column;
   padding-bottom: 10%;
   width: 1000px;
   .intro {
@@ -35,8 +34,7 @@
       height: 100%;
     }
     @media @mobile{
-      display:flex;
-      flex-direction: column;
+      .diplayFlexColumn;
       img{
         width: 94%;
         height: auto;
@@ -71,8 +69,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .diplayFlexJustifyCenter;
 
     .walk-text {
       width: 50%;
@@ -97,8 +94,7 @@
       }
     }
     @media @mobile{
-      display: flex;
-      flex-direction: column;
+      .diplayFlexColumn;
       width: 100%;
       margin: 0px;
       padding: 0px;
@@ -120,10 +116,18 @@
 }// home
 
 body{
-  display: flex;
-  justify-content: center;
+  .diplayFlexJustifyCenter;
   width: 100%;
 }
 .btn{
-  
+  .buttonColor(white,black,1.4rem);
+  .diplayFlexJustifyCenter;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  padding-top: 12px;
+  &:hover{
+    .buttonColor(red,green,1.4);
+  }
+
 }

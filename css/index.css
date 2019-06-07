@@ -1,3 +1,11 @@
+.diplayFlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.diplayFlexJustifyCenter {
+  display: flex;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -162,8 +170,8 @@ p {
 }
 header {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   border: 1px solid #F1F1F1;
   background-color: #F6F6F6;
@@ -206,8 +214,8 @@ footer {
 }
 .home {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   padding-bottom: 10%;
   width: 1000px;
 }
@@ -316,4 +324,20 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+.btn {
+  color: white;
+  background: black;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  padding-top: 12px;
+}
+.btn:hover {
+  color: red;
+  background: green;
+  font-size: 1.4;
 }
